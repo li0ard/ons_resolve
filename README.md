@@ -1,9 +1,5 @@
 # ons_resolve
 
-<p align="center">
-	<img src="https://habrastorage.org/webt/rz/mz/l7/rzmzl7fvjhplminvw6kxfrnojry.png" />
-</p>
-
 Simple module for resolving Session ID from ONS
 
 ```js
