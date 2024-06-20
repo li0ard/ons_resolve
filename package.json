@@ -1,27 +1,35 @@
 {
   "name": "ons_resolve",
-  "version": "1.0.0",
-  "description": "Simple module for resolving Session ID from ONS",
-  "main": "src/index.js",
+  "version": "2.0.0",
+  "module": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
-    "test": "jest"
+    "build": "tsc --project tsconfig.build.json"
   },
-  "keywords": [
-    "oxen",
-    "session",
-    "ons",
-    "blake2b",
-    "argon2",
-    "chacha20",
-    "id"
-  ],
   "author": "li0ard",
-  "license": "MIT",
-  "dependencies": {
-    "bytebuffer": "^5.0.1",
-    "libsodium-wrappers-sumo": "^0.7.13"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/li0ard/ons_resolve.git"
   },
+  "bugs": {
+    "url": "https://github.com/li0ard/ons_resolve/issues"
+  },
+  "homepage": "https://github.com/li0ard/ons_resolve#readme",
+  "description": "Simple module for resolving Session ID from ONS",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "@types/bun": "latest",
+    "@types/libsodium-wrappers-sumo": "^0.7.8"
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "libsodium-wrappers-sumo": "^0.7.13"
   }
 }

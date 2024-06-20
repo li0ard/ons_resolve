@@ -5,7 +5,7 @@ Simple module for resolving Session ID from ONS
 ```js
 const resolve = require("ons_resolve");
 
-resolve("keejef").then(result => console.log(result))
+resolve("li0ard").then(result => console.log(result))
 ```
 
 ---
